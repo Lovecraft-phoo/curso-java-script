@@ -64,3 +64,36 @@ do {
 // con la estructura de for 
 // mostrar los numeros pares entre 1 y 20
 
+//hacer una programa que muestre el factorial de un numero //
+
+const numero = 5; 
+let factorial = 1;
+for(let i = numero; i>0; i--){
+    factorial *= i;
+}
+console.log(factorial);
+
+// hacer un programa que determine si un texto es polindromo 
+
+function Palindromo(text) {
+  
+
+  return  text.split("").reverse().join("") === text ;
+}
+console.log(Palindromo("oso")); // es palindromo
+console.log(Palindromo("hola")); // no es palindromo
+console.log(Palindromo("omo")); // es palindromo
+
+
+// fibonacci 
+
+function fibonacci(n){
+  return n < 2? n: fibonacci(n-1) + fibonacci(n-2)
+}
+console.log(fibonacci(5))
+console.log(fibonacci(7))
+console.log(fibonacci(9))
+
+
+
+
